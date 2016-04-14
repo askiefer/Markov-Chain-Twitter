@@ -1,5 +1,6 @@
 from random import choice
-from sys import argv
+#from sys import argv
+
 
 def open_and_read_file(file_path, file_path_two):
     """Takes file path as string; returns text as string.
@@ -90,8 +91,8 @@ def make_text(chains, last_words):
     return (" ").join(final_text)
 
 
-input_path = argv[1] 
-input_path_two = argv[2]
+input_path = ("Beyonce.txt")
+input_path_two = ("green-eggs.txt")
 
 #Open the file and turn it into one long string
 input_text = open_and_read_file(input_path, input_path_two)
@@ -102,4 +103,4 @@ chains, last_words = make_chains(input_text)
 # Produce random text
 random_text = make_text(chains, last_words)
 
-print random_text
+# print random_text
